@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "module": "commonjs",
+    "target": "es5",
+    "allowJs": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "outDir": "./dist/public/",
+    "lib": [
+      "es2015",
+      "dom",
+      "es6"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@Actions/*": ["client/actions/*"],
+      "@Components/*": ["client/components/*"],
+      "@Reducers/*": ["client/reducers/*"]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
